@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)file:///C:/Users/DELL/Dropbox/PC/Downloads/AgentX/Hadeel_Alshahrani.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadeel Alshahrani | Data Scientist &amp; Analytics </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Hadeel Alshahrani _ Data Scientist &amp; Analytics_files/css2" rel="stylesheet">
+    <style>
+        :root {
+            /* Logo-inspired colors */
+            --primary-blue: #5B8FA3;
+            --primary-dark: #2C5F6F;
+            --navy: #1E4A5F;
+            --light-blue: #D4E7ED;
+            --soft-blue: #E8F2F5;
+            --white: #FFFFFF;
+            --off-white: #F9FCFD;
+            --text-dark: #2C3E50;
+            --text-gray: #6C7A89;
+            --shadow: 0 4px 12px rgba(91, 143, 163, 0.15);
+            --shadow-hover: 0 8px 24px rgba(91, 143, 163, 0.25);
+            --radius: 12px;
+        }
+
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-blue: #6B9BB0;
+                --primary-dark: #3C7F8F;
+                --navy: #2E6A7F;
+                --light-blue: #2C4A55;
+                --soft-blue: #1E3540;
+                --white: #1A2530;
+                --off-white: #1E2A35;
+                --text-dark: #E8F2F5;
+                --text-gray: #B0C4CE;
+                --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+                --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.4);
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background-color: var(--off-white);
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--navy);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary-blue);
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--navy);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header & Nav */
+        header {
+            background: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 0;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--navy);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 0.95rem;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-blue);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--navy) 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            margin-bottom: 40px;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: white;
+            color: var(--navy);
+            border-radius: 50px;
+            font-weight: 700;
+            margin: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            color: var(--primary-blue);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--navy);
+        }
+
+        /* Sections General */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            font-size: 2.5rem;
+            position: relative;
+            color: var(--navy);
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--primary-blue);
+            margin: 20px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Experience & Education */
+        .timeline-item {
+            background: var(--white);
+            padding: 35px;
+            border-radius: var(--radius);
+            margin-bottom: 30px;
+            border-left: 5px solid var(--primary-blue);
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-item:hover {
+            transform: translateX(5px);
+            box-shadow: var(--shadow-hover);
+            border-left-color: var(--navy);
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .role {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--navy);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .company {
+            color: var(--text-gray);
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        .date {
+            background: linear-gradient(135deg, var(--primary-blue), var(--navy));
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(91, 143, 163, 0.3);
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 30px;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--primary-blue);
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+            border-top-color: var(--navy);
+        }
+
+        .project-card h3 {
+            color: var(--navy);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .project-tags {
+            margin-top: 20px;
+        }
+
+        .project-tags span {
+            display: inline-block;
+            background: var(--light-blue);
+            color: var(--navy);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-right: 8px;
+            margin-top: 8px;
+            font-weight: 600;
+        }
+
+        .github-repo-list {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .github-repo-list li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .github-repo-list li::before {
+            content: '📂';
+            position: absolute;
+            left: 0;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .skill-category {
+            flex: 1 1 280px;
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            border-top: 3px solid var(--primary-blue);
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .skill-category h4 {
+            border-bottom: 2px solid var(--light-blue);
+            padding-bottom: 15px;
+            color: var(--navy);
+            font-size: 1.2rem;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .skill-tag {
+            background: var(--soft-blue);
+            color: var(--navy);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .skill-tag:hover {
+            background: var(--light-blue);
+            transform: scale(1.05);
+        }
+
+        /* Recommendation Section */
+        .recommendation-box {
+            background: var(--white);
+            border: 2px solid var(--light-blue);
+            padding: 50px;
+            border-radius: var(--radius);
+            position: relative;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow);
+        }
+
+        .quote-icon {
+            font-size: 4rem;
+            color: var(--light-blue);
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            opacity: 0.6;
+        }
+
+        .recommendation-text {
+            font-style: italic;
+            color: var(--text-gray);
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            padding-left: 50px;
+            line-height: 1.8;
+        }
+
+        .recommender-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 30px;
+            border-top: 2px solid var(--light-blue);
+            padding-top: 25px;
+        }
+
+        .recommender-details h4 {
+            margin-bottom: 5px;
+            color: var(--navy);
+        }
+
+        .recommender-details p {
+            font-size: 0.95rem;
+            color: var(--text-gray);
+            margin-bottom: 3px;
+        }
+
+        .other-references {
+            margin-top: 40px;
+            padding: 30px;
+            background: var(--soft-blue);
+            border-radius: var(--radius);
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        .other-references h3 {
+            color: var(--navy);
+            margin-bottom: 20px;
+        }
+
+        /* Certificates Section */
+        .certificates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .certificate-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 30px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--primary-blue);
+            transition: all 0.3s ease;
+        }
+
+        .certificate-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-left-color: var(--navy);
+        }
+
+        .certificate-card h3 {
+            color: var(--navy);
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+        }
+
+        .certificate-issuer {
+            color: var(--primary-blue);
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 1.05rem;
+        }
+
+        .certificate-date {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .certificate-description {
+            color: var(--text-gray);
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .certificate-badge {
+            display: inline-block;
+            background: var(--light-blue);
+            color: var(--navy);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        /* Contact & Footer */
+        .contact-info {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .contact-item {
+            display: inline-flex;
+            align-items: center;
+            margin: 0 20px 10px;
+            color: white;
+            font-size: 1rem;
+        }
+
+        footer {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--primary-dark) 100%);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: white;
+
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        /* Background decorations */
+        .bg-decoration {
+            background:
+                radial-gradient(circle at 10% 20%, var(--soft-blue) 0%, transparent 50%),
+                radial-gradient(circle at 90% 80%, var(--soft-blue) 0%, transparent 50%);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+
+            .timeline-header {
+                flex-direction: column;
+            }
+
+            .date {
+                display: inline-block;
+                margin-top: 10px;
+                width: fit-content;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .recommendation-text {
+                padding-left: 0;
+            }
+
+            .quote-icon {
+                left: 10px;
+                top: 10px;
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"></div>
+                <ul class="nav-links">
+                    <li><a href="file:///C:/Users/DELL/Dropbox/PC/Downloads/AgentX/Hadeel_Alshahrani.html#about">About</a></li>
+                    <li><a href="file:///C:/Users/DELL/Dropbox/PC/Downloads/AgentX/Hadeel_Alshahrani.html#experience">Experience</a></li>
+                    <li><a href="file:///C:/Users/DELL/Dropbox/PC/Downloads/AgentX/Hadeel_Alshahrani.html#projects">Projects</a></li>
+                    <li><a href="file:///C:/Users/DELL/Dropbox/PC/Downloads/AgentX/Hadeel_Alshahrani.html#skills">Skills</a></li>
+                    <li><a href="file:///C:/Users/DELL/Dropbox/PC/Downloads/AgentX/Hadeel_Alshahrani.html#certificates">Certificates</a></li>
+                    <li><a href="file:///C:/Users/DELL/Dropbox/PC/Downloads/AgentX/Hadeel_Alshahrani.html#recommendation">Recommendation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <h1>Hadeel Saeed Alshahrani</h1>
+                <p>Bachelor of Data Science and Analytics (First Class Honors)</p>
+                <div>
+                    <a href="mailto:Hadeelalshahrani2377@gmail.com" class="btn">Contact Me</a>
+                    <a href="https://github.com/HadeelSaeedAlshahrani" target="_blank" class="btn btn-outline">GitHub Profile</a>
+                    <a href="https://www.linkedin.com/in/hadeel-alshahrani-7526a7288" target="_blank" class="btn btn-outline">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Education -->
+    <section id="about" class="bg-decoration">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p style="text-align: center; max-width: 850px; margin: 0 auto 50px auto; font-size: 1.1rem; color: var(--text-gray); line-height: 1.8;">
+                I am a passionate Data science and analytics graduate from PNU seeking a dynamic and challenging role as a Data Science and Analytics professional, leveraging my academic excellence, hands-on experience, and passion for extracting valuable insights from data. Eager to contribute my skills in statistical analysis, machine learning, and data visualization to drive data-driven decision-making and innovation in a forward-thinking organization.
+            </p>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div>
+                        <div class="role">Bachelor of Data Science and Analytics</div>
+                        <div class="company">Princess Nourah Bint Abdul Rahman University, Riyadh</div>
+                    </div>
+                    <div class="date">2020 – 2024</div>
+                </div>
+                <p><strong>First Class Honors, GPA: 4.79/5</strong></p>
+                <p>Graduation Project Supervisor: Dr. Amel Ksibi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div>
+                        <div class="role">Professional Learning Program (PLP) – SAP Payment Engine</div>
+                        <div class="company">Saudi Central Bank (SAMA), Banking Sector – Riyadh</div>
+                    </div>
+                    <div class="date">Sep 2024 – May 2025</div>
+                </div>
+                <ul>
+                    <li>Focusing on SAP SPRO/IMG Configuration, Banking &amp; Payments, and ISO 20022 standards.</li>
+                    <li>Direct Manager: Abdullah Alsenayen (Head of Enterprise Systems Section).</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div>
+                        <div class="role">Data Analyst Intern (UIP)</div>
+                        <div class="company">Aramco, Community Services Integration Office – Dhahran</div>
+                    </div>
+                    <div class="date">Jan 2024 – Mar 2024</div>
+                </div>
+                <ul>
+                    <li>Worked in Digital Analytics within the Community Services department.</li>
+                    <li>Analyzed internal marketing activities and the MyCommunity App usage.</li>
+                    <li>Deconstructed complex datasets to identify strengths and areas for improvement.</li>
+                    <li>Internship Supervisor: Basma Alghamdi.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-decoration">
+        <div class="container">
+            <h2 class="section-title">Projects &amp; GitHub</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <h3>AgentX Hackathon (2025)</h3>
+                    <p><strong>Role:</strong> AI Engineer &amp; Data Scientist</p>
+                    <p>Developed a "Candidate Screening System Using an Intelligent Agent" for Tuwaiq Academy. Engineered a dual-agent framework to analyze course requirements and rank applicants based on fit.</p>
+                    <div class="project-tags">
+                        <span>Intelligent Agents</span>
+                        <span>Dashboard Design</span>
+                        <span>Data Analysis</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h3>Graduation Project (2024)</h3>
+                    <p><strong>Title:</strong> Analysis of building maintenance requests using text mining.</p>
+                    <p>Leveraged ML and NLP to automate request classification for the University Agency of Operations, improving response times and bilingual text processing.</p>
+                    <div class="project-tags">
+                        <span>NLP</span>
+                        <span>Machine Learning</span>
+                        <span>Text Mining</span>
+                    </div>
+                </div>
+
+                <!-- GitHub Repos -->
+                <div class="project-card">
+                    <h3><a href="https://github.com/HadeelSaeedAlshahrani" target="_blank">GitHub Portfolio</a></h3>
+                    <p>Check out my code and notebooks on GitHub:</p>
+                    <ul class="github-repo-list">
+                        <li><a href="https://github.com/HadeelSaeedAlshahrani/Churn-prediction">Churn-prediction</a></li>
+                        <li><a href="https://github.com/HadeelSaeedAlshahrani/Spam-detection-NLP">Spam-detection-NLP</a></li>
+                        <li><a href="https://github.com/HadeelSaeedAlshahrani/Heart-disease-prediction">Heart-disease-prediction</a></li>
+                        <li><a href="https://github.com/HadeelSaeedAlshahrani/Housing-prediction">Housing-prediction</a></li>
+                        <li><a href="https://github.com/HadeelSaeedAlshahrani/Image-processing-">Image-processing</a></li>
+                        <li><a href="https://github.com/HadeelSaeedAlshahrani/Model-building-guide-">Model-building-guide</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <div class="skill-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Spark</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Cassandra</span>
+                        <span class="skill-tag">Hadoop</span>
+                        <span class="skill-tag">Orange</span>
+                        <span class="skill-tag">Weka</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Machine Learning</h4>
+                    <div class="skill-list">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">TensorFlow</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Data Visualization</h4>
+                    <div class="skill-list">
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Databox</span>
+                        <span class="skill-tag">Google Looker Studio</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">fpp3</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Data Analysis</h4>
+                    <div class="skill-list">
+                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">Kafka</span>
+                        <span class="skill-tag">Google Analytics 4</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Statistical Analysis</h4>
+                    <div class="skill-list">
+                        <span class="skill-tag">Hypothesis Testing</span>
+                        <span class="skill-tag">ANOVA</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>SAP Payment Engine</h4>
+                    <div class="skill-list">
+                        <span class="skill-tag">SAP SPRO/IMG Configuration</span>
+                        <span class="skill-tag">Banking &amp; Payments</span>
+                        <span class="skill-tag">ISO 20022</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <div class="container">
+            <h2 class="section-title">Certificates &amp; Training</h2>
+            <div class="certificates-grid">
+
+                <div class="certificate-card">
+                    <h3>Hugging Face AI Agent Fundamentals</h3>
+                    <div class="certificate-issuer">Hugging Face</div>
+                    <div class="certificate-date">📅 2025</div>
+                    <p class="certificate-description">
+                        Advanced training in AI agent development and implementation using Hugging Face frameworks.
+                    </p>
+                    <span class="certificate-badge">AI &amp; ML</span>
+                </div>
+
+                <div class="certificate-card">
+                    <h3>SAPTEC Technology Fundamentals of SAP S/4HANA and SAP Business Suite</h3>
+                    <div class="certificate-issuer">SAPTEC</div>
+                    <div class="certificate-date">📅 2025</div>
+                    <p class="certificate-description">
+                        Comprehensive understanding of SAP S/4HANA architecture and SAP Business Suite fundamentals.
+                    </p>
+                    <span class="certificate-badge">SAP</span>
+                </div>
+
+                <div class="certificate-card">
+                    <h3>ESG Fundamentals Certificate</h3>
+                    <div class="certificate-issuer">ESG Certification Board</div>
+                    <div class="certificate-date">📅 2024</div>
+                    <p class="certificate-description">
+                        Environmental, Social, and Governance principles and sustainable business practices.
+                    </p>
+                    <span class="certificate-badge">Sustainability</span>
+                </div>
+
+                <div class="certificate-card">
+                    <h3>Advanced NLP: Introduction to BERT</h3>
+                    <div class="certificate-issuer">Professional Training</div>
+                    <div class="certificate-date">📅 2024</div>
+                    <p class="certificate-description">
+                        Advanced natural language processing techniques using BERT and transformer models.
+                    </p>
+                    <span class="certificate-badge">NLP</span>
+                </div>
+
+                <div class="certificate-card">
+                    <h3>QlikView: Data Governance &amp; Metadata Management</h3>
+                    <div class="certificate-issuer">QlikView</div>
+                    <div class="certificate-date">📅 2024</div>
+                    <p class="certificate-description">
+                        Best practices in data governance, metadata management, and data quality assurance.
+                    </p>
+                    <span class="certificate-badge">Data Governance</span>
+                </div>
+
+                <div class="certificate-card">
+                    <h3>Data Recommendation Engines</h3>
+                    <div class="certificate-issuer">Professional Training</div>
+                    <div class="certificate-date">📅 2024</div>
+                    <p class="certificate-description">
+                        Building and deploying recommendation systems using collaborative and content-based filtering.
+                    </p>
+                    <span class="certificate-badge">Machine Learning</span>
+                </div>
+
+                <div class="certificate-card">
+                    <h3>TensorFlow: Word Embeddings &amp; Recurrent Neural Network</h3>
+                    <div class="certificate-issuer">TensorFlow</div>
+                    <div class="certificate-date">📅 2024</div>
+                    <p class="certificate-description">
+                        Deep learning techniques including word embeddings, RNNs, and sequence modeling with TensorFlow.
+                    </p>
+                    <span class="certificate-badge">Deep Learning</span>
+                </div>
+
+                <div class="certificate-card">
+                    <h3>Apache Kafka: Integration with Spark</h3>
+                    <div class="certificate-issuer">Apache Software Foundation</div>
+                    <div class="certificate-date">📅 2024</div>
+                    <p class="certificate-description">
+                        Real-time data streaming and processing using Apache Kafka integrated with Apache Spark.
+                    </p>
+                    <span class="certificate-badge">Big Data</span>
+                </div>
+
+                <div class="certificate-card">
+                    <h3>Business Analysis Documentation &amp; Criteria</h3>
+                    <div class="certificate-issuer">Professional Training</div>
+                    <div class="certificate-date">📅 2024</div>
+                    <p class="certificate-description">
+                        Requirements gathering, documentation standards, and business analysis best practices.
+                    </p>
+                    <span class="certificate-badge">Business Analysis</span>
+                </div>
+
+                <div class="certificate-card">
+                    <h3>IBM Big Data Foundation Level 2</h3>
+                    <div class="certificate-issuer">IBM</div>
+                    <div class="certificate-date">📅 2023</div>
+                    <p class="certificate-description">
+                        Advanced big data concepts, architectures, and implementation strategies.
+                    </p>
+                    <span class="certificate-badge">Big Data</span>
+                </div>
+
+                <div class="certificate-card">
+                    <h3>Google Analytics Certification</h3>
+                    <div class="certificate-issuer">Google</div>
+                    <div class="certificate-date">📅 2023</div>
+                    <p class="certificate-description">
+                        Web analytics, data collection, analysis, and reporting using Google Analytics platform.
+                    </p>
+                    <span class="certificate-badge">Analytics</span>
+                </div>
+
+                <div class="certificate-card">
+                    <h3>Oracle Academy Database Foundation Course</h3>
+                    <div class="certificate-issuer">Oracle Academy</div>
+                    <div class="certificate-date">📅 2021</div>
+                    <p class="certificate-description">
+                        Database design, SQL programming, and Oracle database management fundamentals.
+                    </p>
+                    <span class="certificate-badge">Database</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendation Section -->
+    <section id="recommendation" class="bg-decoration">
+        <div class="container">
+            <h2 class="section-title">Recommendation</h2>
+
+            <div class="recommendation-box">
+                <div class="quote-icon">❝</div>
+                <div class="recommendation-text">
+                    <p>I am writing to wholeheartedly recommend Hadeel for any future positions she may pursue in the sector of data and analytical sciences. During her internship at Saudi Aramco, specifically within the Community Services Department, Hadeel demonstrated an exceptional level of proficiency, dedication, and expertise that left a lasting impression on our team.</p>
+                    <br>
+                    <p>Hadeel's major in analytical sciences was immediately evident in her approach to our internal marketing activities... She exhibited an impressive ability to deconstruct complex data sets, identifying strengths, weaknesses, and areas for improvement with remarkable clarity.</p>
+                    <br>
+                    <p>One of the most commendable aspects of Hadeel's work was her proficiency in systems and numbers... Her hard work ethic combined with her analytical prowess and ability to communicate complex ideas in a simple and effective manner, makes her an ideal candidate for any position that requires a keen analytical mind.</p>
+                </div>
+
+                <div class="recommender-info">
+                    <div class="recommender-details">
+                        <h4>Basma Alghamdi</h4>
+                        <p>Head of Marketing and Internal Communication</p>
+                        <p>Community Services, Saudi Aramco</p>
+                        <p style="font-size: 0.85rem; margin-top: 8px;">
+                            <a href="mailto:Basma.ghamdi.1@aramco.com">Basma.ghamdi.1@aramco.com</a> | +966554944943
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other References Summary -->
+            <div class="other-references">
+                <h3>Other References</h3>
+                <p><strong>Dr. Amel Ksibi</strong> - Graduation Project Supervisor<br>
+                Assistant Professor, Princess Nourah Bint Abdul Rahman University | <a href="mailto:amelksibi@pnu.edu.sa">amelksibi@pnu.edu.sa</a> | +966548454419</p>
+                <br>
+                <p><strong>Abdullah Alsenayen</strong> - Direct Manager<br>
+                Head of Enterprise Systems Section, Digital Development, Saudi Central Bank (SAMA) | <a href="mailto:AAlsenayen@SAMA.GOV.SA">AAlsenayen@SAMA.GOV.SA</a></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <span class="contact-item">📧 <a href="mailto:Hadeelalshahrani2377@gmail.com">Hadeelalshahrani2377@gmail.com</a></span>
+                <span class="contact-item">📱 +966501074584</span>
+                <span class="contact-item">📍 Riyadh, Saudi Arabia</span>
+            </div>
+            <p style="margin-top: 20px;">© 2025 Hadeel Saeed Alshahrani. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+</body></html>
